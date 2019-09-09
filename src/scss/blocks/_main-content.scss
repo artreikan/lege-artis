@@ -5,3 +5,18 @@
 .main-content__breadcrumbs {
   margin-bottom: 20px;
 }
+
+.main-content__text-wrapper {
+  @include col(8, $useMargin: false);
+}
+
+.main-content__heading,
+.main-content__text-block {
+  margin-bottom: 20px;
+}
+
+.main-content__text-block {
+  &--important {
+    margin-top: 60px;
+  }
+}
