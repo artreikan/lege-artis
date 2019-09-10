@@ -142,9 +142,10 @@ $navLinksColor: #333333;
   display: block;
   padding: 20px;
   text-transform: uppercase;
+  transition: background-color $duration;
 
   &:hover {
     color: #fff;
-    background: $secondaryColor;
+    background-color: $secondaryColor;
   }
 }

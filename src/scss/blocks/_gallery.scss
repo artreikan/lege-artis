@@ -50,6 +50,7 @@
 .gallery__item-actions-btn {
   background: none;
   border: none;
+  z-index: 101;
 
   svg {
     width: 42px;

@@ -1,0 +1,43 @@
+.news {
+  padding: 40px 0;
+}
+
+.news__row {
+  @include row;
+}
+
+.news__item {
+  @include col(3);
+  text-align: center;
+  margin-bottom: 30px;
+
+  &--big {
+    @include col(4);
+  }
+}
+
+.news__item-img {
+  height: 150px;
+  margin-bottom: 15px;
+  background-size: cover;
+  background-position: center;
+}
+
+.news__item-title {
+  margin-bottom: 12px;
+  font-size: 16px;
+
+  &--big {
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+.news__item-descr {
+  font-size: 15px;
+}
+
+.news__form {
+  @include col(4);
+  background: $primaryColor;
+}

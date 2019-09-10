@@ -211,7 +211,8 @@
 				</div>
 				<div class="gallery__items">
 					<div class="gallery__item-wrap">
-						<div class="gallery__item" style="background-image: url('dist/img/slide-1.jpg')">
+						<div class="gallery__item" style="background-image: url('dist/img/slide-1.jpg')" role="img"
+						     aria-label="Slide 1">
 							<div class="gallery__item-actions-wrap">
 								<div class="gallery__item-actions">
 									<button class="gallery__item-actions-btn" aria-label="Открыть на весь экран">
@@ -224,7 +225,8 @@
 						</div>
 					</div>
 					<div class="gallery__item-wrap">
-						<div class="gallery__item" style="background-image: url('dist/img/slide-2.jpg')">
+						<div class="gallery__item" style="background-image: url('dist/img/slide-2.jpg')" role="img"
+						     aria-label="Slide 2">
 							<div class="gallery__item-actions-wrap">
 								<div class="gallery__item-actions">
 									<button class="gallery__item-actions-btn" aria-label="Открыть на весь экран">
@@ -237,7 +239,8 @@
 						</div>
 					</div>
 					<div class="gallery__item-wrap">
-						<div class="gallery__item" style="background-image: url('dist/img/slide-3.jpg')">
+						<div class="gallery__item" style="background-image: url('dist/img/slide-3.jpg')" role="img"
+						     aria-label="Slide 4">
 							<div class="gallery__item-actions-wrap">
 								<div class="gallery__item-actions">
 									<button class="gallery__item-actions-btn" aria-label="Открыть на весь экран">
@@ -250,7 +253,8 @@
 						</div>
 					</div>
 					<div class="gallery__item-wrap">
-						<div class="gallery__item" style="background-image: url('dist/img/slide-1.jpg')">
+						<div class="gallery__item" style="background-image: url('dist/img/slide-1.jpg')" role="img"
+						     aria-label="Slide 5">
 							<div class="gallery__item-actions-wrap">
 								<div class="gallery__item-actions">
 									<button class="gallery__item-actions-btn" aria-label="Открыть на весь экран">
@@ -263,7 +267,8 @@
 						</div>
 					</div>
 					<div class="gallery__item-wrap">
-						<div class="gallery__item" style="background-image: url('dist/img/slide-4.jpg')">
+						<div class="gallery__item" style="background-image: url('dist/img/slide-4.jpg')" role="img"
+						     aria-label="Slide 6">
 							<div class="gallery__item-actions-wrap">
 								<div class="gallery__item-actions">
 									<button class="gallery__item-actions-btn" aria-label="Открыть на весь экран">
@@ -320,6 +325,109 @@
 				</div>
 			</section>
 			<!-- /.lists -->
+
+			<section class="news">
+				<h2 class="visually-hidden">Новости</h2>
+				<div class="container">
+					<div class="news__row">
+						<article class="news__item">
+							<div class="news__item-img" style="background-image: url('dist/img/slide-1.jpg')" role="img"
+							     aria-label="News 1">
+
+							</div>
+							<h3 class="news__item-title">
+								Клиника на Обсерваторной
+							</h3>
+							<p class="news__item-descr">
+								Комментарии. Элемент
+								«Комментарий» (класс comment)
+								применяется к пояснительному
+								тексту.
+							</p>
+						</article>
+						<article class="news__item">
+							<div class="news__item-img" style="background-image: url('dist/img/news-2.jpg')" role="img"
+							     aria-label="News 2">
+
+							</div>
+							<h3 class="news__item-title">
+								Мероприятие. День Рождения
+								«Леге Артис»
+							</h3>
+							<p class="news__item-descr">
+								Комментарии. Элемент
+								«Комментарий» (класс comment)
+								применяется к пояснительному
+								тексту.
+							</p>
+						</article>
+						<article class="news__item">
+							<div class="news__item-img" style="background-image: url('dist/img/news-3.jpg')" role="img"
+							     aria-label="News 3">
+
+							</div>
+							<h3 class="news__item-title">
+								«Леге Оптика»
+							</h3>
+							<p class="news__item-descr">
+								Комментарии. Элемент
+								«Комментарий» (класс comment)
+								применяется к пояснительному
+								тексту.
+							</p>
+						</article>
+					</div>
+					<div class="news__row">
+						<article class="news__item news__item--big">
+							<div class="news__item-img" style="background-image: url('dist/img/news-4.jpg')" role="img"
+							     aria-label="News 4">
+
+							</div>
+							<h3 class="news__item-title news__item-title--big">
+								Мероприятие. День Рождения
+								«Леге Артис»
+							</h3>
+							<a href="#!" class="news__item-link">10 фото</a>
+						</article>
+						<article class="news__item news__item--big">
+							<div class="news__item-img" style="background-image: url('dist/img/news-3.jpg')" role="img"
+							     aria-label="News 4">
+
+							</div>
+							<h3 class="news__item-title news__item-title--big">
+								«Леге Оптика»
+							</h3>
+							<a href="#!" class="news__item-link">15 фото</a>
+						</article>
+						<form action="/" method="post" class="form news__form">
+							<div class="form-switcher">
+								<button type="button" class="form-switcher__btn form-switcher__btn--active">Записаться</button>
+								<button type="button" class="form-switcher__btn">Задать вопрос</button>
+							</div>
+							<div class="form__group">
+								<p class="form__error"></p>
+								<label for="input-name" class="form__label visually-hidden">Имя</label>
+								<input type="text" name="name" id="input-name" class="form__input" placeholder="Имя">
+							</div>
+							<div class="form__group">
+								<p class="form__error"></p>
+								<label for="input-tel" class="form__label visually-hidden">Телефон</label>
+								<input type="tel" name="tel" id="input-tel" class="form__input" placeholder="Телефон">
+							</div>
+							<div class="form__group">
+								<p class="form__error"></p>
+								<label for="textarea-message" class="form__label visually-hidden">Повод обращения</label>
+								<textarea name="message" id="textarea-message" rows="5"
+								          placeholder="Повод обращения" class="form__input form__input--textarea"></textarea>
+							</div>
+							<div class="form__group">
+								<button class="g-btn form__btn">Записаться на прием</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<!-- /.news -->
 		</main>
 		<!-- /.main-content -->
 
