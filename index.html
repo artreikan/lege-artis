@@ -4,6 +4,7 @@
 		<meta charset="UTF-8"/>
 		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 		<title>Леге Артис</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
 		<link rel="stylesheet" href="dist/css/style.css"/>
 	</head>
 	<body>
@@ -177,7 +178,8 @@
 						<span class="text-block__extra text-block__extra--important">Важно</span>
 					</p>
 				</div>
-				<div class="about">
+				<section class="about">
+					<h2 class="about__title visually-hidden">О компании</h2>
 					<img src="dist/img/content-img.jpg" alt="" class="about__image">
 					<div class="about__descr">
 						<p class="about__paragraph">
@@ -194,10 +196,104 @@
 							умеренный уровень цен.
 						</p>
 					</div>
-				</div>
+				</section>
 			</div>
+
+			<section class="gallery">
+				<div class="container">
+					<h2 class="gallery__title">
+						Фотогалерея в тексте
+					</h2>
+				</div>
+				<div class="gallery__items">
+					<div class="gallery__item-wrap">
+						<div class="gallery__item" style="background-image: url('dist/img/slide-1.jpg')">
+							<div class="gallery__item-actions-wrap">
+								<div class="gallery__item-actions">
+									<button class="gallery__item-actions-btn" aria-label="Открыть на весь экран">
+										<svg>
+											<use xlink:href="dist/img/symbol/sprite.svg#zoom-in"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="gallery__item-wrap">
+						<div class="gallery__item" style="background-image: url('dist/img/slide-2.jpg')">
+							<div class="gallery__item-actions-wrap">
+								<div class="gallery__item-actions">
+									<button class="gallery__item-actions-btn" aria-label="Открыть на весь экран">
+										<svg>
+											<use xlink:href="dist/img/symbol/sprite.svg#zoom-in"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="gallery__item-wrap">
+						<div class="gallery__item" style="background-image: url('dist/img/slide-3.jpg')">
+							<div class="gallery__item-actions-wrap">
+								<div class="gallery__item-actions">
+									<button class="gallery__item-actions-btn" aria-label="Открыть на весь экран">
+										<svg>
+											<use xlink:href="dist/img/symbol/sprite.svg#zoom-in"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="gallery__item-wrap">
+						<div class="gallery__item" style="background-image: url('dist/img/slide-1.jpg')">
+							<div class="gallery__item-actions-wrap">
+								<div class="gallery__item-actions">
+									<button class="gallery__item-actions-btn" aria-label="Открыть на весь экран">
+										<svg>
+											<use xlink:href="dist/img/symbol/sprite.svg#zoom-in"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="gallery__item-wrap">
+						<div class="gallery__item" style="background-image: url('dist/img/slide-4.jpg')">
+							<div class="gallery__item-actions-wrap">
+								<div class="gallery__item-actions">
+									<button class="gallery__item-actions-btn" aria-label="Открыть на весь экран">
+										<svg>
+											<use xlink:href="dist/img/symbol/sprite.svg#zoom-in"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="gallery__item-wrap">
+						<div class="gallery__item" style="background-image: url('dist/img/slide-5.jpg')">
+							<div class="gallery__item-actions-wrap">
+								<div class="gallery__item-actions">
+									<button class="gallery__item-actions-btn" aria-label="Открыть на весь экран">
+										<svg>
+											<use xlink:href="dist/img/symbol/sprite.svg#zoom-in"></use>
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+			</section>
 		</main>
 		<!-- /.main-content -->
-		<script src="dist/js/main.js"></script>
+
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+		<script defer src="dist/js/main.js"></script>
 	</body>
 </html>
