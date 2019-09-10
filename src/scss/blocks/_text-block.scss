@@ -45,6 +45,11 @@ $importantBorderColor: #ae262e;
     border: 2px solid $importantBorderColor;
     padding: 25px 35px;
   }
+
+  &--footnote {
+    font-size: 13px;
+    margin-bottom: 0;
+  }
 }
 
 .text-block__extra {
