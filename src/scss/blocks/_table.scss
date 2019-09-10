@@ -5,10 +5,15 @@
 
 .table-wrapper {
   @include col(8);
+  margin-top: -120px;
+  display: flex;
+  flex-direction: column;
 }
 
 .table {
   width: 100%;
+  margin-bottom: 25px;
+  overflow-x: auto;
 }
 
 .table__head {
@@ -36,4 +41,9 @@
       padding-top: 0;
     }
   }
+}
+
+.table__comment {
+  font-size: 12px;
+  margin-bottom: 40px;
 }
