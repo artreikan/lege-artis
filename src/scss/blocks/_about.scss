@@ -5,6 +5,10 @@
   position: relative;
 }
 
+.about__image {
+  @include fluidImage;
+}
+
 .about__descr {
   @include col(6, $useMargin: false);
   position: absolute;

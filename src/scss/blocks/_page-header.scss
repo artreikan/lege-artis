@@ -48,9 +48,12 @@ $navLinksColor: #333333;
 
 .page-header__special-version {
   @include col(2, $useMargin: false);
+  display: flex;
+  align-items: center;
   box-shadow: -10px 0px 10px -1px rgba(0, 0, 0, 0.15);
   padding: 10px 40px;
   margin-left: auto;
+  align-self: stretch;
 }
 
 .special-version__link {
@@ -147,5 +150,32 @@ $navLinksColor: #333333;
   &:hover {
     color: #fff;
     background-color: $secondaryColor;
+  }
+}
+
+@media screen and (max-width: 1065px) {
+  .page-header__nav {
+    display: none;
+  }
+
+  .page-header__special-version {
+    @include col(4, $useMargin: false);
+    padding: 10px 20px;
+  }
+
+  .page-header__appointment-btn {
+    padding: 20px;
+
+    &::before {
+      @include centerBoth;
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+  .page-header__bottom {
+    display: none;
   }
 }
