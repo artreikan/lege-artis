@@ -30,6 +30,10 @@ a {
   @include container;
 }
 
+.row {
+  @include row;
+}
+
 .visually-hidden {
   @include visuallyHidden;
 }
