@@ -48,3 +48,22 @@ $listsItemsBorderColor: #0094da;
 .list__item {
   margin-bottom: 5px;
 }
+
+
+// media
+
+@media screen and (max-width: 840px) {
+  .lists__items {
+    @include col(12, $useMargin: false);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .lists__items {
+    flex-direction: column;
+  }
+
+  .lists__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

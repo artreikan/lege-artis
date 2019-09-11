@@ -44,3 +44,25 @@
 .main-content__pagination {
   margin-bottom: 270px;
 }
+
+
+// media
+
+@media screen and (max-width: 720px) {
+  .main-content__text-wrapper {
+    @include col(12, $useMargin: false);
+  }
+
+  .main-content__news-item {
+    margin-bottom: 30px;
+  }
+
+  .main-content__bottom-part {
+    @include col(12);
+    margin-top: 0;
+  }
+
+  .main-content__pagination {
+    margin-bottom: 60px;
+  }
+}

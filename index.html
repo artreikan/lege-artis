@@ -433,18 +433,18 @@
 							<div class="form__group">
 								<p class="form__error"></p>
 								<label for="input-name" class="form__label visually-hidden">Имя</label>
-								<input type="text" name="name" id="input-name" class="form__input" placeholder="Имя">
+								<input type="text" name="name" id="input-name" class="form__input" placeholder="Имя" required>
 							</div>
 							<div class="form__group">
 								<p class="form__error"></p>
 								<label for="input-tel" class="form__label visually-hidden">Телефон</label>
-								<input type="tel" name="tel" id="input-tel" class="form__input" placeholder="Телефон">
+								<input type="tel" name="tel" id="input-tel" class="form__input" placeholder="Телефон" required>
 							</div>
 							<div class="form__group">
 								<p class="form__error"></p>
 								<label for="textarea-message" class="form__label visually-hidden">Повод обращения</label>
 								<textarea name="message" id="textarea-message" rows="5"
-								          placeholder="Повод обращения" class="form__input form__input--textarea"></textarea>
+								          placeholder="Повод обращения" class="form__input form__input--textarea" required></textarea>
 							</div>
 							<div class="form__group">
 								<button class="g-btn form__btn">Записаться на прием</button>
@@ -458,77 +458,79 @@
 			<div class="container">
 				<div class="row">
 					<div class="main-content__bottom-part">
-						<h3 class="table-title heading heading--level-3">H3. Заголовок таблицы</h3>
-						<table class="table main-content__table">
-							<thead class="table__head">
-								<tr class="table__row">
-									<th class="table__cell table__cell--head">Услуга</th>
-									<th class="table__cell table__cell--head">Цена</th>
-									<th class="table__cell table__cell--head">Цена по карте</th>
-								</tr>
-							</thead>
-							<tbody class="table__body">
-								<tr class="table__row">
-									<td class="table__cell">
-										Консультативный прием врача кандидата медицинских наук
-									</td>
-									<td class="table__cell">2000</td>
-									<td class="table__cell"><b>1860</b></td>
-								</tr>
-								<tr class="table__row">
-									<td class="table__cell">
-										Консультативный прием врача
-									</td>
-									<td class="table__cell" colspan="2">Б/п</td>
-								</tr>
-								<tr class="table__row table__row--bordered">
-									<td class="table__cell">
-										Консультативный прием детей в возрасте до 5-ти лет
-									</td>
-									<td class="table__cell" colspan="2">Б/п</td>
-								</tr>
-								<tr class="table__row">
-									<td class="table__cell">
-										Оптическая когерентная томография
-									</td>
-								</tr>
-								<tr class="table__row">
-									<td class="table__cell table__cell--subcell">
-										1 глаз
-									</td>
-									<td class="table__cell">1600</td>
-									<td class="table__cell"><b>1488</b></td>
-								</tr>
-								<tr class="table__row table__row--bordered">
-									<td class="table__cell table__cell--subcell">
-										2 глаза
-									</td>
-									<td class="table__cell">2000</td>
-									<td class="table__cell"><b>1860</b></td>
-								</tr>
-								<tr class="table__row">
-									<td class="table__cell">
-										Оптическая когерентная томография после курса лечения
-										(однократно)
-									</td>
-								</tr>
-								<tr class="table__row">
-									<td class="table__cell table__cell--subcell">
-										1 глаз
-									</td>
-									<td class="table__cell">800</td>
-									<td class="table__cell"><b>700</b></td>
-								</tr>
-								<tr class="table__row table__row--bordered">
-									<td class="table__cell table__cell--subcell">
-										2 глаза
-									</td>
-									<td class="table__cell">800</td>
-									<td class="table__cell"><b>700</b></td>
-								</tr>
-							</tbody>
-						</table>
-						<p class="table-comment main-content__table-comment">Комментарии к таблице (внизу небольшим шрифтом)</p>
+						<div class="table-wrapper">
+							<h3 class="table-title heading heading--level-3">H3. Заголовок таблицы</h3>
+							<table class="table main-content__table">
+								<thead class="table__head">
+									<tr class="table__row">
+										<th class="table__cell table__cell--head">Услуга</th>
+										<th class="table__cell table__cell--head">Цена</th>
+										<th class="table__cell table__cell--head">Цена по карте</th>
+									</tr>
+								</thead>
+								<tbody class="table__body">
+									<tr class="table__row">
+										<td class="table__cell">
+											Консультативный прием врача кандидата медицинских наук
+										</td>
+										<td class="table__cell">2000</td>
+										<td class="table__cell"><b>1860</b></td>
+									</tr>
+									<tr class="table__row">
+										<td class="table__cell">
+											Консультативный прием врача
+										</td>
+										<td class="table__cell" colspan="2">Б/п</td>
+									</tr>
+									<tr class="table__row table__row--bordered">
+										<td class="table__cell">
+											Консультативный прием детей в возрасте до 5-ти лет
+										</td>
+										<td class="table__cell" colspan="2">Б/п</td>
+									</tr>
+									<tr class="table__row">
+										<td class="table__cell">
+											Оптическая когерентная томография
+										</td>
+									</tr>
+									<tr class="table__row">
+										<td class="table__cell table__cell--subcell">
+											1 глаз
+										</td>
+										<td class="table__cell">1600</td>
+										<td class="table__cell"><b>1488</b></td>
+									</tr>
+									<tr class="table__row table__row--bordered">
+										<td class="table__cell table__cell--subcell">
+											2 глаза
+										</td>
+										<td class="table__cell">2000</td>
+										<td class="table__cell"><b>1860</b></td>
+									</tr>
+									<tr class="table__row">
+										<td class="table__cell">
+											Оптическая когерентная томография после курса лечения
+											(однократно)
+										</td>
+									</tr>
+									<tr class="table__row">
+										<td class="table__cell table__cell--subcell">
+											1 глаз
+										</td>
+										<td class="table__cell">800</td>
+										<td class="table__cell"><b>700</b></td>
+									</tr>
+									<tr class="table__row table__row--bordered">
+										<td class="table__cell table__cell--subcell">
+											2 глаза
+										</td>
+										<td class="table__cell">800</td>
+										<td class="table__cell"><b>700</b></td>
+									</tr>
+								</tbody>
+							</table>
+							<p class="table-comment main-content__table-comment">Комментарии к таблице (внизу небольшим шрифтом)</p>
+						</div>
 						<!-- /.table -->
 
 						<ul class="pagination main-content__pagination">

@@ -13,7 +13,32 @@ $(document).ready(function () {
                   <svg>
                     <use xlink:href="dist/img/symbol/sprite.svg#next"></use>
                   </svg>
-                </button>`
+                </button>`,
+
+    responsive: [
+      {
+        breakpoint: 860,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 680,
+        settings: {
+          slidesToShow: 2,
+          centerPadding: '60px',
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '40px',
+          arrows: false
+        }
+      }
+    ]
   });
 
   // accordion
@@ -21,8 +46,8 @@ $(document).ready(function () {
     const $this = $(this);
 
     $this.toggleClass('accordion__head--active')
-         .siblings('.accordion__head')
-         .removeClass('accordion__head--active');
+    .siblings('.accordion__head')
+    .removeClass('accordion__head--active');
 
     $('.accordion__body').not($this.next()).slideUp(300);
     $this.next().slideToggle(300);

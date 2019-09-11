@@ -65,5 +65,13 @@ $importantBorderColor: #ae262e;
   }
 }
 
+@media screen and (max-width: 480px) {
+  .text-block {
+    &--quote {
+      padding: 35px;
+    }
+  }
+}
+
 
 
