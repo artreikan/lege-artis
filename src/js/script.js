@@ -15,4 +15,16 @@ $(document).ready(function () {
                   </svg>
                 </button>`
   });
+
+  // accordion
+  $('.accordion__head').on('click', function () {
+    const $this = $(this);
+
+    $this.toggleClass('accordion__head--active')
+         .siblings('.accordion__head')
+         .removeClass('accordion__head--active');
+
+    $('.accordion__body').not($this.next()).slideUp(300);
+    $this.next().slideToggle(300);
+  });
 });
