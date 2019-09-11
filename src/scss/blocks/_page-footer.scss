@@ -4,7 +4,7 @@ $servicesListsBorder: #2981cf;
 
 .page-footer {
   background-color: $primaryColor;
-  padding: 60px 0;
+  padding: 60px 0 20px;
   color: #fff;
 
   a {
@@ -15,6 +15,10 @@ $servicesListsBorder: #2981cf;
     list-style: none;
     padding-left: 0;
   }
+}
+
+.page-footer__row {
+  margin-bottom: 40px;
 }
 
 .page-footer__left,
@@ -148,11 +152,19 @@ $servicesListsBorder: #2981cf;
   right: 0;
   background-color: $secondaryColor;
   border: none;
+  padding: 13px 30px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  transition: background-color $duration;
 
   svg {
     width: 23px;
     height: 23px;
     fill: #fff;
+  }
+
+  &:hover {
+    background-color: darken($secondaryColor, 5%);
   }
 }
 
@@ -164,12 +176,6 @@ $servicesListsBorder: #2981cf;
   &::placeholder {
     font-size: 20px;
   }
-}
-
-.page-footer__search-btn {
-  padding: 13px 30px;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
 }
 
 .page-footer__discounts {
@@ -215,4 +221,112 @@ $servicesListsBorder: #2981cf;
 .page-footer__discount {
   font-size: 18px;
   display: block;
+}
+
+.page-footer__bottom {
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.page-footer__copy {
+  @include col(3);
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.page-footer__rules {
+  @include col(6);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.page-footer__rules-item {
+  width: 50%;
+}
+
+.page-footer__rules-link {
+  font-size: 14px;
+}
+
+.page-footer__developer {
+  @include col(3);
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.page-footer__contraindications {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+// media
+
+@media screen and (max-width: 968px) {
+  .page-footer__row {
+    justify-content: center;
+  }
+
+  .page-footer__left,
+  .page-footer__mid,
+  .page-footer__right {
+    @include col(6);
+    margin-bottom: 30px;
+  }
+  
+  .page-footer__about-company {
+    text-align: left;
+    margin-bottom: 25px;
+  }
+
+  .page-footer__services-lists {
+    padding: 30px 0;
+  }
+
+  .page-footer__right {
+    text-align: center;
+  }
+
+  .page-footer__discounts-img {
+    margin: 0 auto 5px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .page-footer__left,
+  .page-footer__mid,
+  .page-footer__right {
+    @include col(12);
+  }
+
+  .page-footer__left {
+    text-align: center;
+  }
+
+  .page-footer__about-company {
+    text-align: center;
+  }
+
+  .page-footer__socials {
+    justify-content: center;
+  }
+
+  .page-footer__bottom {
+    flex-direction: column;
+  }
+
+  .page-footer__copy,
+  .page-footer__rules {
+    @include col(12);
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .page-footer__developer {
+    @include col(12);
+    text-align: center;
+  }
 }
