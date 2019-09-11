@@ -17,7 +17,8 @@ $servicesListsBorder: #2981cf;
   }
 }
 
-.page-footer__left {
+.page-footer__left,
+.page-footer__right {
   @include col(3);
 }
 
@@ -169,4 +170,49 @@ $servicesListsBorder: #2981cf;
   padding: 13px 30px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+}
+
+.page-footer__discounts {
+  background-color: $secondaryColor;
+  padding: 60px 25px 25px;
+}
+
+.page-footer__discounts-title {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0 20px;
+
+  span {
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+  svg {
+    width: 65px;
+    height: 60px;
+    fill: #fff;
+    vertical-align: middle;
+    transform: rotate(45deg);
+  }
+}
+
+.page-footer__discounts-item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.page-footer__discounts-img {
+  @include fluidImage;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.page-footer__discounts-text {
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.page-footer__discount {
+  font-size: 18px;
+  display: block;
 }
