@@ -15,7 +15,7 @@ $navLinksColor: #333333;
   align-items: center;
 }
 
-.page-header__company-name {
+.page-header__about-company {
   @include col(2, $useMargin: false);
   font-size: 13px;
   color: $companyNameColor;
@@ -73,9 +73,18 @@ $navLinksColor: #333333;
   }
 }
 
+.page-header__mid {
+  padding: 20px 0;
+}
+
 .page-header__logo,
 .page-header__we-work {
   @include col(2, $useMargin: false);
+}
+
+.page-header__logo-image {
+  width: 169px;
+  height: 110px;
 }
 
 .page-header__addresses {

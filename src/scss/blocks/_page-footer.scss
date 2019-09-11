@@ -1,0 +1,92 @@
+$aboutCompanyColor: #8cc9ff;
+$socialIconsColor: #d1d1d1;
+
+.page-footer {
+  background-color: $primaryColor;
+  padding: 60px 0;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+}
+
+.page-footer__left {
+  @include col(3);
+}
+
+.page-footer__logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.page-footer__logo-image {
+  width: 229px;
+  height: 51px;
+}
+
+.page-footer__about-company {
+  text-align: center;
+  color: $aboutCompanyColor;
+  font-size: 13px;
+  margin-bottom: 40px;
+}
+
+.page-footer__institutions {
+  margin-bottom: 30px;
+}
+
+.page-footer__institutions-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.page-footer__institutions-link {
+  font-size: 15px;
+}
+
+.page-footer__phones-link {
+  font-size: 21px;
+  font-weight: 500;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.page-footer__socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -10px 20px;
+}
+
+.page-footer__socials-item {
+  margin: 0 10px;
+}
+
+.page-footer__socials-link {
+  display: block;
+  border: 1px solid $secondaryColor;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: relative;
+  transition: border-color $duration;
+
+  &:hover {
+    border-color: #fff;
+  }
+}
+
+.page-footer__socials-ic {
+  @include centerBoth;
+  width: 23px;
+  height: 23px;
+  fill: $socialIconsColor;
+}
