@@ -52,4 +52,19 @@ $(document).ready(function () {
     $('.accordion__body').not($this.next()).slideUp(300);
     $this.next().slideToggle(300);
   });
+
+  // mobile menu
+  const $mobileMenu = $('.mobile-menu');
+
+  function openMenu() {
+    $mobileMenu.addClass('mobile-menu--active');
+  }
+
+  function closeMenu() {
+    $mobileMenu.removeClass('mobile-menu--active');
+  }
+
+  $('.open-menu').on('click', openMenu);
+
+  $mobileMenu.on('click', '.close-menu, .mobile-menu__link', closeMenu);
 });
