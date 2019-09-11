@@ -15,6 +15,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   line-height: 1.2;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 a {

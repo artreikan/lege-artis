@@ -137,3 +137,9 @@ $sidebarDocsSizeColor: #666;
     border: 1px solid #fff;
   }
 }
+
+@media screen and (max-width: 968px) {
+  .sidebar {
+    @include col(4);
+  }
+}
