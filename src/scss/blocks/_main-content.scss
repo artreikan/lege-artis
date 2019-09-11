@@ -21,9 +21,21 @@
   }
 }
 
+.main-content__news-item {
+  margin-bottom: 120px;
+}
+
 .main-content__bottom-part {
   @include col(8);
   margin-top: -120px;
   display: flex;
   flex-direction: column;
+}
+
+.main-content__table {
+  margin-bottom: 25px;
+}
+
+.main-content__table-comment {
+  margin-bottom: 40px;
 }
