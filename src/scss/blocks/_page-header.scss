@@ -158,6 +158,10 @@ $navLinksColor: #333333;
     display: none;
   }
 
+  .page-header__we-work {
+    display: none;
+  }
+
   .page-header__special-version {
     @include col(4, $useMargin: false);
     padding: 10px 20px;
