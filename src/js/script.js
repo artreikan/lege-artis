@@ -41,6 +41,30 @@ $(document).ready(function () {
     ]
   });
 
+  // slider in sidebar
+  $('.sidebar__slider').slick({
+    dots: true,
+    dotsClass: 'sidebar__slider-dots',
+    prevArrow: `<button type="button" class="sidebar__slider-btn sidebar__slider-btn--prev" aria-label="Предыдущий слайд">
+                  <svg>
+                    <use xlink:href="dist/img/symbol/sprite.svg#back"></use>
+                  </svg>
+                </button>`,
+    nextArrow: `
+                <button type="button" class="sidebar__slider-btn sidebar__slider-btn--next" aria-label="Следующий слайд">
+                  <svg>
+                    <use xlink:href="dist/img/symbol/sprite.svg#next"></use>
+                  </svg>
+                </button>`,
+    customPaging: function(slick, index) {
+      return `<button type="button" class="sidebar__slider-dots-btn">
+                <svg>
+                  <use xlink:href="dist/img/symbol/sprite.svg#dot"></use>
+                </svg>
+              </button>`;
+    }
+  });
+
   // accordion
   $('.accordion__head').on('click', function () {
     const $this = $(this);
