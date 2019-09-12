@@ -17,7 +17,8 @@ $errorTextColor: #cb2c38;
   background-color: $secondBgColor;
   text-decoration: underline;
   transition: background-color $duration, color $duration;
-  font-weight: 600;
+  font-weight: 700;
+  font-family: 'Gotham Pro', sans-serif;
 
   &--active,
   &:hover {

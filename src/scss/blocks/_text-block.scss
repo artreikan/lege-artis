@@ -7,6 +7,7 @@ $importantBorderColor: #ae262e;
 
   &--lead {
     font-size: 18px;
+    font-family: 'Gotham Pro', sans-serif;
     line-height: 1.2;
     font-weight: 500;
     color: $secondaryColor;
@@ -44,6 +45,7 @@ $importantBorderColor: #ae262e;
     letter-spacing: 0.001rem;
     border: 2px solid $importantBorderColor;
     padding: 25px 35px;
+    font-family: 'Gotham Pro', sans-serif;
   }
 
   &--footnote {
@@ -55,6 +57,7 @@ $importantBorderColor: #ae262e;
 .text-block__extra {
   position: absolute;
   display: block;
+  font-weight: 700;
 
   &--important {
     left: -2px;

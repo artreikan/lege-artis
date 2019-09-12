@@ -39,7 +39,8 @@ $servicesListsBorder: #2981cf;
 .page-footer__about-company {
   text-align: center;
   color: $aboutCompanyColor;
-  font-size: 13px;
+  font-size: 12px;
+  font-family: 'Gotham Pro', sans-serif;
   margin-bottom: 40px;
 }
 
@@ -53,6 +54,7 @@ $servicesListsBorder: #2981cf;
 
 .page-footer__institutions-link {
   font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .page-footer__phones-link {
@@ -67,6 +69,8 @@ $servicesListsBorder: #2981cf;
 
 .page-footer__we-work {
   margin-bottom: 40px;
+  font-size: 15px;
+  font-family: 'Gotham Pro', sans-serif;
 }
 
 .page-footer__socials {
@@ -128,6 +132,7 @@ $servicesListsBorder: #2981cf;
 
 .page-footer__services-link {
   font-weight: 500;
+  font-family: 'Gotham Pro', sans-serif;
 }
 
 .page-footer__services-sublist {
@@ -137,6 +142,7 @@ $servicesListsBorder: #2981cf;
 
 .page-footer__services-sublink {
   font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .page-footer__search {
@@ -175,6 +181,7 @@ $servicesListsBorder: #2981cf;
 
   &::placeholder {
     font-size: 20px;
+    font-family: 'Gotham Pro', sans-serif;
   }
 }
 
@@ -187,6 +194,7 @@ $servicesListsBorder: #2981cf;
   font-size: 22px;
   text-transform: uppercase;
   font-weight: 500;
+  font-family: 'Gotham Pro', sans-serif;
   padding: 0 20px;
 
   span {
@@ -220,6 +228,7 @@ $servicesListsBorder: #2981cf;
 
 .page-footer__discount {
   font-size: 18px;
+  font-family: 'Gotham Pro', sans-serif;
   display: block;
 }
 
@@ -248,19 +257,23 @@ $servicesListsBorder: #2981cf;
 
 .page-footer__rules-link {
   font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .page-footer__developer {
   @include col(3);
   margin-bottom: 0;
   text-align: center;
+  font-size: 14px;
 }
 
 .page-footer__contraindications {
   text-transform: uppercase;
   text-align: center;
   font-size: 36px;
+  font-family: 'Akrobat', sans-serif;
   font-weight: 400;
+  display: block;
 }
 
 // media

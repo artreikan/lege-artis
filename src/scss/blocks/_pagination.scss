@@ -4,7 +4,6 @@
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
-  font-size: 18px;
 }
 
 .pagination__item {
@@ -12,6 +11,8 @@
 }
 
 .pagination__link {
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 18px;
   display: block;
   width: 40px;
   height: 40px;
