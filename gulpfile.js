@@ -38,11 +38,6 @@ gulp.task('styles', () => {
         grid: true
       })
   )
-  .pipe(
-      $.cleanCss({
-        level: 2
-      })
-  )
   .pipe(reload({stream: true}))
   .pipe(gulp.dest(path.build.css));
 });
@@ -54,11 +49,6 @@ gulp.task('scripts', () => {
   .pipe(
       $.babel({
         presets: ['@babel/env']
-      })
-  )
-  .pipe(
-      $.uglify({
-        toplevel: true
       })
   )
   .pipe(reload({stream: true}))
