@@ -707,8 +707,8 @@ a {
 .main-content {
   padding-top: 20px;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1; }
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
 
 .main-content__breadcrumbs {
   margin-bottom: 20px; }
